@@ -1,0 +1,9 @@
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\bin\Debug\momryGame_1_Podstawowe kontrolki.exe
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\bin\Debug\momryGame_1_Podstawowe kontrolki.pdb
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe kontrolki.csproj.AssemblyReference.cache
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe_kontrolki.MemoryForm.resources
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe_kontrolki.Properties.Resources.resources
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe kontrolki.csproj.GenerateResource.cache
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe kontrolki.csproj.CoreCompileInputs.cache
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe kontrolki.exe
+C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_1_Podstawowe kontrolki\obj\Debug\momryGame_1_Podstawowe kontrolki.pdb
