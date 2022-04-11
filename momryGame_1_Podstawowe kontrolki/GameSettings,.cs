@@ -16,8 +16,8 @@ namespace momryGame_1_Podstawowe_kontrolki
         public int Bok;
         public int AktualnePunkty;
 
-        public string PlikLogo = $@"{AppDomain.CurrentDomain.BaseDirectory}\img\logo.jpg";
-        public string FolderObrazki = $@"{AppDomain.CurrentDomain.BaseDirectory}\img\logo.jpg";
+        public string PlikLogo = $@"{AppDomain.CurrentDomain.BaseDirectory}\obrazki\logo.jpg";
+        public string FolderObrazki = $@"{AppDomain.CurrentDomain.BaseDirectory}\obrazki\karty";
 
         public GameSettings()
         {
