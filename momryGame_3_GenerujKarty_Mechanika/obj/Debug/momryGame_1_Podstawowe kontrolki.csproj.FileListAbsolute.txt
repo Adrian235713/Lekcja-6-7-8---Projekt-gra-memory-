@@ -29,3 +29,25 @@ C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_2_GenerujKarty_Dodawani_grafik\
 C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_2_GenerujKarty_Dodawani_grafik\obj\Debug\momryGame_1_Podstawowe kontrolki.exe
 C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_2_GenerujKarty_Dodawani_grafik\obj\Debug\momryGame_1_Podstawowe kontrolki.pdb
 C:\Users\Nubi\Desktop\memoryGame_1_2_3\momryGame_2_GenerujKarty_Dodawani_grafik\bin\Debug\obrazki\logo.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\apple.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\chasz.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\cplus.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\css.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\html.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\java.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\js.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\php.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\pyt.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\scra.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\sql.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\logo.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\obrazki\karty\andro.jpg
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\momryGame_1_Podstawowe kontrolki.exe
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\bin\Debug\momryGame_1_Podstawowe kontrolki.pdb
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe kontrolki.csproj.AssemblyReference.cache
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe_kontrolki.MemoryForm.resources
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe_kontrolki.Properties.Resources.resources
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe kontrolki.csproj.GenerateResource.cache
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe kontrolki.csproj.CoreCompileInputs.cache
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe kontrolki.exe
+C:\Users\Nubi\Desktop\cwiczymy\momryGame_3_GenerujKarty_Mechanika\obj\Debug\momryGame_1_Podstawowe kontrolki.pdb

@@ -15,8 +15,8 @@ namespace momryGame_1_Podstawowe_kontrolki
     {
         private GameSettings _settings;
 
-        //MemoryCard _pierwsza = null;
-        //MemoryCard _drugi = null;
+        MemoryCard _pierwsza = null; // <<<<<<<<<<<<<<<<< Lekcja 3
+        MemoryCard _drugi = null; // <<<<<<<<<<<<<<<<< Lekcja 3
 
         public MemoryForm()
         {
@@ -27,6 +27,9 @@ namespace momryGame_1_Podstawowe_kontrolki
             UstawKontrolki();
 
             GenerujKarty();
+
+            timerCzasPodgladu.Start();
+
         }
 
         //----------------------------------------------------------------
@@ -48,9 +51,6 @@ namespace momryGame_1_Podstawowe_kontrolki
         private void GenerujKarty()
         {
 
-        //Brawo ja popraw sciezki w GameStings.cs ..... 
-        //public string PlikLogo = $@"{AppDomain.CurrentDomain.BaseDirectory}\obrazki\logo.jpg";
-        //public string FolderObrazki = $@"{AppDomain.CurrentDomain.BaseDirectory}\obrazki\karty";
 
         string[] memories = Directory.GetFiles(_settings.FolderObrazki);
             _settings.MaxPunkty = memories.Length;
@@ -82,6 +82,8 @@ namespace momryGame_1_Podstawowe_kontrolki
 
                     MemoryCard b = buttons[inddex];
 
+                    b.Click += BtnClicked; // <<<<<<<<<<<<<<<<< Lekcja 3
+
                     int margines = 2;
 
                     b.Location = new Point((x * _settings.Bok) + (margines * x), (y *_settings.Bok) + (margines * y));
@@ -99,6 +101,134 @@ namespace momryGame_1_Podstawowe_kontrolki
 
         }
 
+        //----------------------------------------------------------------
+        // <<<<<<<<<<<<<<<<< Lekcja 3
+        //  Obsługa czasu podglądu kart i ich ukrycia
+        //  Test - timerCzasPodgladu.Start(); w public MemoryForm()
+        //----------------------------------------------------------------
+        private void timerCzasPodgladu_Tick(object sender, EventArgs e)
+        {
+            _settings.CzasPodgladu--;
 
+            lblStartInfo.Text = $"Początek gry za {_settings.CzasPodgladu}";
+
+            if (_settings.CzasPodgladu <= 0)
+            {
+                lblStartInfo.Visible = false;
+
+                foreach (Control konrolka in panelKart.Controls)
+                {
+                    MemoryCard card = (MemoryCard)konrolka;
+                    card.Zakryj();
+                }
+
+                timerCzasPodgladu.Stop();
+
+                timerCzasGry.Start();
+
+            }
+        }
+        //----------------------------------------------------------------
+        // <<<<<<<<<<<<<<<<< Lekcja 3
+        //  Odkrywanie kart
+        //----------------------------------------------------------------
+        private void BtnClicked(object sender, EventArgs e)
+        {
+            MemoryCard btn = (MemoryCard)sender;
+
+            if (_pierwsza == null)
+            {
+                _pierwsza = btn;
+                _pierwsza.Odkryj();
+            }
+            else
+            {
+                _drugi = btn;
+                _drugi.Odkryj();
+
+                if ((_pierwsza.Id == _drugi.Id))
+                {
+                    _settings.AktualnePunkty++;
+
+                    lblPunktyWartosc.Text = _settings.AktualnePunkty.ToString();
+
+                    _pierwsza = null;
+                    _drugi = null;
+
+                    panelKart.Enabled = true;
+
+                }
+
+                else
+                {
+                    timerZakrywacz.Start();
+                }
+
+            }
+        }
+        //----------------------------------------------------------------
+        // <<<<<<<<<<<<<<<<< Lekcja 3
+        //Obsługa zakończenia gry + restartowanie
+        //----------------------------------------------------------------
+        private void timerZakrywacz_Tick(object sender, EventArgs e)
+        {
+            _pierwsza.Zakryj();
+            _drugi.Zakryj();
+
+            _pierwsza = null;
+            _drugi = null;
+
+            panelKart.Enabled = true;
+
+            timerZakrywacz.Stop();
+        }
+
+        //----------------------------------------------------------------
+        // <<<<<<<<<<<<<<<<< Lekcja 3
+        //----------------------------------------------------------------
+
+        private void timerCzasGry_Tick(object sender, EventArgs e)
+        {
+            _settings.CzasGry--;
+            lblCzasWartosc.Text = _settings.CzasGry.ToString();
+
+            if (_settings.CzasGry <= 0 || _settings.AktualnePunkty == _settings.MaxPunkty)
+            {
+                timerCzasGry.Stop();
+                timerZakrywacz.Stop();
+
+                DialogResult yesNo = MessageBox.Show($"Zdobyte punkty:{ _settings.AktualnePunkty}. Grasz ponownie?", "Koniec Gry", MessageBoxButtons.YesNo);
+
+                if (yesNo == DialogResult.Yes)
+                {
+
+                    _settings.UstawStartowe();
+
+                    GenerujKarty();
+                    UstawKontrolki();
+
+                    panelKart.Enabled = true;
+                    _pierwsza = null;
+                    _drugi = null;
+
+                    timerCzasPodgladu.Start();
+                }
+                else
+                {
+                    Application.Exit();
+                }
+
+            }
+
+        }
+        //----------------------------------------------------------------
+        //----------------------------------------------------------------
+
+
+
+
+
+
+        //----------------------------------------------------------------
     }
 }
